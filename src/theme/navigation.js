@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 const NavigationContainer = styled.nav`
+  ${props => console.log(props)}
   background: ${({ theme, isOnHome }) => (isOnHome ? theme.color1 : theme.color2)};
 
   & ul {
